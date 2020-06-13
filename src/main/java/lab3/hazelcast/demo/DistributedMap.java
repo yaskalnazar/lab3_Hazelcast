@@ -13,8 +13,8 @@ public class DistributedMap {
         ClientConfig config = new ClientConfig();
         config.setClusterName("dev");
         var hz = HazelcastClient.newHazelcastClient(config);
-        IMap map = hz.getMap("distributedMap");
-        for (int i = 1000; i < 2000; i++) {
+        IMap<Integer, String> map = hz.getMap("distributedMap");
+        for (int i = 0; i < 1000; i++) {
             map.put(i, "value: " + i);
         }
 
