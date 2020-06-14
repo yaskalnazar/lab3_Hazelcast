@@ -1,4 +1,4 @@
-package lab3.hazelcast.demo;
+package lab3.hazelcast.demo.maps;
 
 import com.hazelcast.client.HazelcastClient;
 import com.hazelcast.client.config.ClientConfig;
